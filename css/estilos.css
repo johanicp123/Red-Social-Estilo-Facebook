@@ -119,8 +119,63 @@ header .botones .perfil img{
     border-radius: 100px;
     margin-right: 5px;
 }
+/*aside*/
+aside{
+    height: 100vh;
+    overflow: hidden;
+    padding-top: 60px;
+}
 
+/*aside enlaces rapidos*/
+.enlaces-rapidos > nav a {
+    display: flex;
+    align-items: center;
+    color: var(--blanco);
+    padding: 10px 10px;
+    border-radius: 3px;
+}
+
+.enlaces-rapidos > nav a:hover {
+    background: var(--input-hover);
+}
+
+.enlaces-rapidos .perfil img{
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    margin-right: 10px;
+}
+
+.enlaces-rapidos .icono{
+    margin-right: 20px;
+}
+.enlaces-rapidos .icono svg{
+    height: 20px;
+    width: 20px;
+}
+
+/*footer*/
+footer{
+    margin: 4px 0;
+}
+
+footer nav a {
+    font-size: 14px;
+    margin-right: 7px;
+    color: var(--gris-claro);
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+    color: var(--gris-claro);
+}
 /*mediaqueries*/
+@media screen and (max-width:768px){
+    .enlaces-rapidos{
+        display: none;
+    }
+}
+
 @media screen and (max-width:992px){
     header {
         padding-top: 10px;
@@ -128,6 +183,10 @@ header .botones .perfil img{
 
     .menu{
         margin-top: 10px;
+    }
+
+    aside{
+        padding-top: 130px;
     }
 }
 
